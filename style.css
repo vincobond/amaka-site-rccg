@@ -1,0 +1,239 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(2, 39, 80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.image_cont {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+.circle_cont {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.circle, .circle2, .circle3 {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* Image */
+.img_cont {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img2 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Content */
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.textbox h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.textbox .text_box {
+    color: rgb(2, 39, 80);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.input_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-icon {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.input-icon input {
+    padding-left: 35px;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input_cont button {
+    width: 100%;
+    max-width: 500px;
+    height: 45px;
+    background-color: rgb(2, 39, 80);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input_cont button:hover {
+    background-color: rgb(4, 55, 105);
+}
+
+.sphere {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(2, 39, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+}
+
+.round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    .img2 {
+        width: 90%;
+    }
+
+    /* Hamburger icon visible on mobile */
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(2, 39, 80);
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .text_box {
+        font-size: 1.5rem;
+    }
+
+    .input_cont input,
+    .input_cont button {
+        width: 90%;
+    }
+
+    .sphere {
+        margin-left: 0;
+    }
+}

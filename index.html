@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCCG PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="image_cont">
+                <img src="img/redeem logo.png" alt="RCCG Logo">
+                <div class="logo"><h3>Amaka site</h3></div>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Learn More</a></li>
+                    <li><a href="#"><i class="fas fa-gift"></i> Refer, Get $10</a></li>
+                </ul>
+            </nav>
+
+            <div class="circle_cont">
+                <div class="circle"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </div>
+        </div>
+
+        <div class="img_cont">
+            <img src="img/images/baba Adeboye.jpeg" alt="Pastor Adeboye" class="img2">
+        </div>
+
+        <div class="content">
+            <div class="textbox">
+                <h3>Can't find what you're looking for?</h3>
+                <h1 class="text_box">Ask Us A Question</h1>
+            </div>
+
+            <div class="input_cont">
+                <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="input-icon">
+                    <i class="fas fa-question-circle"></i>
+                    <input type="text" placeholder="Your Question">
+                </div>
+                <button><h4>Send it Our Way</h4></button>
+                <div class="sphere"><div class="round"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
